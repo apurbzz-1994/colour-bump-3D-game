@@ -11,6 +11,8 @@ public class WorldObjectLogic : MonoBehaviour
 
     public Color32 winningColor; 
 
+    public GameObject rotor;
+
     int totalColors = 4;
     void Start()
     {
@@ -40,6 +42,7 @@ public class WorldObjectLogic : MonoBehaviour
         if(currentColor.r == winningColor.r && currentColor.g == winningColor.g && currentColor.b == winningColor.b){
             // it is the winning color, so rotate the fans
             Debug.Log("You've bumped into the winning color!");
+            rotor.GetComponent<RotorLogic>().winningColorFound = true;
         }
         else{
             // pick a random colour from the array and change the mesh color to that

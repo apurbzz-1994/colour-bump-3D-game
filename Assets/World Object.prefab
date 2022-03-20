@@ -108,6 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9136d5ddb94c4b0f8854429669bfe16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectColors: []
+  winningColor:
+    serializedVersion: 2
+    rgba: 0
+  rotor: {fileID: 2115741096229234730}
 --- !u!1 &1461400820150075712
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461400820150075712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 1.178, z: 0.016}
+  m_LocalPosition: {x: 0.01, y: 1.178, z: 0.079}
   m_LocalScale: {x: 0.09680161, y: 0.10983057, z: 0.105037466}
   m_Children: []
   m_Father: {fileID: 4188910691584704361}
@@ -216,8 +221,9 @@ GameObject:
   - component: {fileID: 950114206317831009}
   - component: {fileID: 1785800218951424229}
   - component: {fileID: 2048345862859844658}
+  - component: {fileID: 8617121116935877212}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Rotor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,13 +236,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115741096229234730}
-  m_LocalRotation: {x: -0, y: -0, z: 0.79335326, w: 0.60876167}
-  m_LocalPosition: {x: 0.007, y: 1.234, z: 0.019}
+  m_LocalRotation: {x: -0, y: -0, z: 0.70744556, w: 0.70676786}
+  m_LocalPosition: {x: 0.007, y: 1.234, z: 0.07599996}
   m_LocalScale: {x: -0.0018924965, y: 0.098321, z: 2.4019}
   m_Children: []
   m_Father: {fileID: 4188910691584704361}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.055}
 --- !u!33 &950114206317831009
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -299,6 +305,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8617121116935877212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115741096229234730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cee758b6d344278a12c83e58a45c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winningColorFound: 0
 --- !u!1 &5073925718988832549
 GameObject:
   m_ObjectHideFlags: 0
